@@ -1,5 +1,8 @@
 @extends('layout.app')
 
+@section('description', $post->meta['meta_description'])
+@section('title', 'bood | ' . $post->title)
+
 @section('content')
     <article class="blog-post px-3 py-5 p-md-5">
         <div class="container single-col-max-width">

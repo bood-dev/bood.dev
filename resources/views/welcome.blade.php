@@ -1,5 +1,8 @@
 @extends('layout.app')
 
+@section('description', 'Brandon Ortiz Home')
+@section('title', 'bood | Home')
+
 @section('content')
 <section class="about-me-section p-3 p-lg-5 theme-bg-light">
     <div class="container">
@@ -69,7 +72,7 @@
                 <div class="card project-card">
                     <div class="row no-gutters">
                         <div class="col-lg-4 card-img-holder">
-                            <img src="{{ asset('images/portfolio/GTA/home.PNG') }}" class="card-img" alt="image">
+                            <img src="{{ asset('images/proyectos/GTA/home.PNG') }}" class="card-img" alt="image">
                         </div>
                         <div class="col-lg-8">
                             <div class="card-body">
@@ -93,7 +96,7 @@
                 <div class="card project-card">
                     <div class="row no-gutters">
                         <div class="col-lg-4 card-img-holder">
-                            <img src="{{ asset('images/portfolio/SCASTI/home.PNG') }}" class="card-img" alt="Página SCASTI">
+                            <img src="{{ asset('images/proyectos/SCASTI/home.PNG') }}" class="card-img" alt="Página SCASTI">
                         </div>
                         <div class="col-lg-8">
                             <div class="card-body">

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>bood | Home</title>
+	<title>@yield('title')</title>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Brandon Ortiz | Home">
+	<meta name="description" content="@yield('description')">
 	<meta name="author" content="Brandon Ortiz">
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -45,6 +45,7 @@
 	<script src="{{ asset('plugins/js-cookie.min.js') }}"></script>
 	<script src="{{ asset('js/dark-mode.js') }}"></script>
 
+    @yield('scripts')
 </body>
 </html>
 

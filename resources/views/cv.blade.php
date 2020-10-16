@@ -1,7 +1,9 @@
 @extends('layout.app')
 
+@section('description', 'Brandon Ortiz CV')
+@section('title', 'bood | CV')
+
 @section('content')
-<div class="main-wrapper">
     <section class="cta-section theme-bg-light py-5">
         <div class="container text-center single-col-max-width">
             <h2 class="heading mb-3">CV</h2>
@@ -164,5 +166,4 @@
                 </article>
 
             </div><!--//container-->
-        </div><!--//main-wrapper-->
 @endsection
