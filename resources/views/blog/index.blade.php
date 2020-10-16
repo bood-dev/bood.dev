@@ -1,5 +1,8 @@
 @extends('layout.app')
 
+@section('description', 'Brandon Ortiz Blog')
+@section('title', 'bood | Blog')
+
 @section('content')
     <section class="cta-section theme-bg-light py-5">
         <div class="container text-center">

@@ -12,7 +12,7 @@
                 <div class="profile-section pt-3 pt-lg-0">
                     <img class="profile-image mb-3 rounded-circle mx-auto" src="{{ asset('images/avatar.png') }}" alt="Brandon Ortiz">
 
-                    <div class="bio mb-3">Hola, mi nombre es Brandon y soy licenciado en multimedia y animación digital. Bienvendio a mi sitio!</div><!--//bio-->
+                    <div class="bio mb-3">Animador 3d convertido a ingeniero de seguridad en aplicaciones.</div><!--//bio-->
                     <ul class="social-list list-inline py-2 mx-auto">
                         <li class="list-inline-item"><a href="https://twitter.com/_bood" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
                         <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
@@ -22,16 +22,16 @@
                 </div><!--//profile-section-->
 
                 <ul class="navbar-nav flex-column text-left">
-                    <li class="nav-item active">
+                    <li class="nav-item" id="lbl_home">
                         <a class="nav-link" href="{{ url('/') }}"><i class="fas fa-user fa-fw mr-2"></i>Sobre mí<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="lbl_proyectos">
                         <a class="nav-link" href="{{ url('/proyectos') }}"><i class="fas fa-laptop-code fa-fw mr-2"></i>Proyectos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="lbl_cv">
                         <a class="nav-link" href="{{ url('/cv') }}"><i class="fas fa-file-alt fa-fw mr-2"></i>CV</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="lbl_blog">
                         <a class="nav-link" href="{{ url('/blog') }}"><i class="fas fa-blog fa-fw mr-2"></i>Blog</a>
                     </li>
                 </ul>
@@ -54,3 +54,25 @@
         </nav>
     </div><!--//force-overflow-->
 </header>
+
+<script>
+    switch(document.title) {
+        case "bood | Home":
+            document.getElementById("lbl_home").classList.add("active");
+            break;
+
+        case "bood | Proyectos":
+            document.getElementById("lbl_proyectos").classList.add("active");
+            break;
+
+        case "bood | CV":
+            document.getElementById("lbl_cv").classList.add("active");
+            break;
+
+        case "bood | Blog":
+            document.getElementById("lbl_blog").classList.add("active");
+            break;
+
+        default: break;
+    }
+</script>
