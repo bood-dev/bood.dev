@@ -59,9 +59,9 @@
                                     </p>
                                     <ul class="resume-list">
                                         <li>Diseñar e implementar estándares y políticas de seguridad para aplicaciones web y móviles.</li>
-                                        <li>Auditar y evaluar por medio de análisis estático y dinámico la seguridad de aplicaciones web y móviles para asegurar la integridad y condifencialidad de las plataformas.</li>
+                                        <li>Auditar y evaluar por medio de análisis estático y dinámico la seguridad de aplicaciones web y móviles para asegurar la integridad y confidencialidad de las plataformas.</li>
                                         <li>Desarrollar y automatizar la revisión de controles del Sistema de Gestión de Seguridad de la Información para minimizar el riesgo de pérdida de ejecución o cumplimiento de controles.</li>
-                                        <li>Capacitar y asesorar al equipo de desarrollo de software en el uso de estándares durante el ciclo de desarrollo.</li>
+                                        <li>Capacitar y asesorar al equipo de desarrollo de software en el uso de estándares de seguridad durante el ciclo de desarrollo.</li>
                                         <li>Comunicar resultados de pruebas de seguridad y/o hallazgos con el fin de identificar áreas de oportunidad y generar nuevos proyectos para la remediación de vulnerabilidades.</li>
                                         <li>Diseñar y presentar pruebas de concepto de aplicaciones para la remediación efectiva de vulnerabilidades por parte del equipo de desarrollo.</li>
                                         <li>Mantenimiento de documentación técnica de certificados TLS/SSL.</li>
@@ -91,6 +91,12 @@
 
                         <section class="project-section py-3">
                             <h3 class="text-uppercase resume-section-heading mb-4"><i class="fas fa-graduation-cap"></i> Educación</h3>
+                            <div class="item mb-3">
+                                <div class="item-heading row align-items-center mb-2">
+                                    <h4 class="item-title col-12 col-md-8 col-lg-8 mb-2 mb-md-0">Certified Application Security Engineer - .NET</h4>
+                                    <div class="item-meta col-12 col-md-4 col-lg-4 text-muted text-left text-md-right"><strong>EC-Council</strong> | 2021 (en curso)</div>
+                                </div>
+                            </div>
                             <div class="item mb-3">
                                 <div class="item-heading row align-items-center mb-2">
                                     <h4 class="item-title col-12 col-md-6 col-lg-6 mb-2 mb-md-0">Lic. en Multimedia y Animación Digital</h4>
@@ -136,6 +142,7 @@
                                     <li class="mb-2">Node.js / JWT</li>
                                     <li class="mb-2">ASP.NET / C#, VB / MSSQL</li>
                                     <li class="mb-2">PHP / Laravel / MySQL</li>
+                                    <li class="mb-2">Cordova / Ionic</li>
                                     <li class="mb-2">IIS / Apache-Tomcat</li>
                                     <li class="mb-2">Docker</li>
                                     <li class="mb-2">GIT / TFS</li>
@@ -158,9 +165,9 @@
                     <hr>
                     <div class="resume-footer text-center">
                         <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-                            <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://github.com/bood-dev"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/bood-dev</span></a></li>
-                            <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="#"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/</span></a></li>
-                            <li class="list-inline-item mb-lg-0 mr-lg-3"><a class="resume-link" href="https://twitter.com/_bood"><i class="fab fa-twitter-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@_bood</span></a></li>
+                            <li class="list-inline-item mb-lg-0 mr-lg-3"><a class="resume-link" href="https://twitter.com/_bood" target="_blank"><i class="fab fa-twitter-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@_bood</span></a></li>
+                            <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://linkedin.com/in/brandon-ortiz" target="_blank"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/brandon-ortiz</span></a></li>
+                            <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://github.com/bood-dev" target="_blank"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/bood-dev</span></a></li>
                         </ul>
                     </div><!--//resume-footer-->
                 </article>

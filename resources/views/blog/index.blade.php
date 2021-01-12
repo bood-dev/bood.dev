@@ -27,11 +27,11 @@
                             <img class="card-img-top" src="{{ $post->featured_image }}" alt="image">
                             <div class="card-body">
                                 <h5 class="card-title"><a class="theme-link" href="{{ url('/blog/' . $post->slug) }}">{{ $post->title}}</a></h5>
-                                <p class="card-text">{{ $post->excerpt}}</p>
+                                <p class="card-text">{{ $post->summary }}</p>
                                 <p class="mb-0"><a class="more-link" href="{{ url('/blog/' . $post->slug) }}">Leer más &rarr;</a></p>
                             </div>
                             <div class="card-footer">
-                                <small class="text-muted">{{ $post->publish_date->format('d M Y')}}</small>
+                                <small class="text-muted">{{ $post->published_at->format('d M Y') }}</small>
                             </div>
                         </div><!--//card-->
                     </div><!--//col-->

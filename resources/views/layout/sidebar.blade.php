@@ -1,6 +1,6 @@
 <header class="header text-center">
     <div class="force-overflow">
-        <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Brandon Ortiz</a></h1>
+        <h1 class="blog-name pt-lg-4 mb-0"><a href="{{ route('home.index') }}">Brandon Ortiz</a></h1>
 
         <nav class="navbar navbar-expand-lg navbar-dark" >
 
@@ -12,10 +12,9 @@
                 <div class="profile-section pt-3 pt-lg-0">
                     <img class="profile-image mb-3 rounded-circle mx-auto" src="{{ asset('images/avatar.png') }}" alt="Brandon Ortiz">
 
-                    <div class="bio mb-3">Animador 3d convertido a ingeniero de seguridad en aplicaciones.</div><!--//bio-->
                     <ul class="social-list list-inline py-2 mx-auto">
                         <li class="list-inline-item"><a href="https://twitter.com/_bood" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://linkedin.com/in/brandon-ortiz" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
                         <li class="list-inline-item"><a href="https://github.com/bood-dev" target="_blank"><i class="fab fa-github-alt"></i></a></li>
                     </ul><!--//social-list-->
                     <hr>
@@ -23,7 +22,7 @@
 
                 <ul class="navbar-nav flex-column text-left">
                     <li class="nav-item" id="lbl_home">
-                        <a class="nav-link" href="{{ url('/') }}"><i class="fas fa-user fa-fw mr-2"></i>Sobre mí<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{{ route('home.index') }}"><i class="fas fa-user fa-fw mr-2"></i>Sobre mí<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item" id="lbl_proyectos">
                         <a class="nav-link" href="{{ url('/proyectos') }}"><i class="fas fa-laptop-code fa-fw mr-2"></i>Proyectos</a>
@@ -32,7 +31,7 @@
                         <a class="nav-link" href="{{ url('/cv') }}"><i class="fas fa-file-alt fa-fw mr-2"></i>CV</a>
                     </li>
                     <li class="nav-item" id="lbl_blog">
-                        <a class="nav-link" href="{{ url('/blog') }}"><i class="fas fa-blog fa-fw mr-2"></i>Blog</a>
+                        <a class="nav-link" href="{{ route('blog.index') }}"><i class="fas fa-blog fa-fw mr-2"></i>Blog</a>
                     </li>
                 </ul>
 
@@ -47,9 +46,7 @@
 
                     <input class="toggle" id="darkmode" type="checkbox">
                     <label class="toggle-btn mx-auto mb-0" for="darkmode"></label>
-
                 </div><!--//dark-mode-toggle-->
-
             </div>
         </nav>
     </div><!--//force-overflow-->
@@ -69,10 +66,8 @@
             document.getElementById("lbl_cv").classList.add("active");
             break;
 
-        case "bood | Blog":
+        default:
             document.getElementById("lbl_blog").classList.add("active");
             break;
-
-        default: break;
     }
 </script>
