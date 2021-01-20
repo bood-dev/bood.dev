@@ -24,6 +24,7 @@
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i><a class="resume-link" href="tel:8186573897">81 8657 3897</a></li>
                             <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="mailto:bood.dev@gmail.com">bood.dev@gmail.com</a></li>
+                            <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a href="https://bood.dev" class="resume-link">https://bood.dev</a></li>
                             <li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>Monterrey, Nuevo León</li>
                         </ul>
                     </div><!--//resume-contact-->

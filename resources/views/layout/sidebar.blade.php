@@ -25,10 +25,10 @@
                         <a class="nav-link" href="{{ route('home.index') }}"><i class="fas fa-user fa-fw mr-2"></i>Sobre mí<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item" id="lbl_proyectos">
-                        <a class="nav-link" href="{{ url('/proyectos') }}"><i class="fas fa-laptop-code fa-fw mr-2"></i>Proyectos</a>
+                        <a class="nav-link" href="{{ route('project.index') }}"><i class="fas fa-laptop-code fa-fw mr-2"></i>Proyectos</a>
                     </li>
                     <li class="nav-item" id="lbl_cv">
-                        <a class="nav-link" href="{{ url('/cv') }}"><i class="fas fa-file-alt fa-fw mr-2"></i>CV</a>
+                        <a class="nav-link" href="{{ route('cv.index') }}"><i class="fas fa-file-alt fa-fw mr-2"></i>CV</a>
                     </li>
                     <li class="nav-item" id="lbl_blog">
                         <a class="nav-link" href="{{ route('blog.index') }}"><i class="fas fa-blog fa-fw mr-2"></i>Blog</a>

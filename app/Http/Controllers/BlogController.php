@@ -14,7 +14,8 @@ class BlogController extends Controller
      */
     public function index()
     {        
-        $posts = Post::published()
+        $posts = Post::with('tags', 'views')
+            ->published()
             ->orderBy('published_at')
             ->get();
 
@@ -29,7 +30,10 @@ class BlogController extends Controller
      */
     public function show($slug)
     {
-        $post = Post::with('tags', 'topic', 'user')->firstWhere('slug', $slug);
+        $post = Post::with('tags', 'topic', 'user', 'views')
+            ->firstWhere('slug', $slug);
+
+        event(new \Canvas\Events\PostViewed($post));
 
         return view('blog.show', compact('post'));
     }

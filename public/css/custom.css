@@ -5,3 +5,11 @@
 .btn-secondary:hover {
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
+
+.label {
+    color: white!important;
+    padding: 4px!important;
+    border-radius: 5px!important;
+}
+
+.info { background-color: #2196F3!important; }

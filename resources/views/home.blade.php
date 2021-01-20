@@ -4,6 +4,16 @@
 @section('title', 'bood | Home')
 
 @section('content')
+<style>
+    .label {
+        color: white;
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    .info { background-color: #2196F3; }
+</style>
+
 <section class="about-me-section p-3 p-lg-5 theme-bg-light">
     <div class="container">
         <div class="profile-teaser media flex-column flex-lg-row">
@@ -12,11 +22,11 @@
                 <h2 class="name font-weight-bold mb-1">Brandon Ortiz</h2>
                 <div class="tagline mb-3">Lic. en Multimedia y Animación Digital</div>
                 <div class="bio mb-4">Desarrollador y analista de seguridad de software, interesado en temas de front-end y back-end y en entender como funcionan las cosas. Escribo sobre temas de seguridad enfocados al desarrollo de aplicaciones en <a class="link-on-bg" href="{{ route('blog.index') }}">mi blog</a>.
-                    <br>¿Quieres saber cómo te puedo ayudar con tus ideas? Revisa mis <a class="link-on-bg" href="{{ url('/proyectos') }}">proyectos</a> y <a class="link-on-bg" href="{{ url('/cv') }}">CV</a>.
+                    <br>¿Quieres saber cómo te puedo ayudar con tus ideas? Revisa mis <a class="link-on-bg" href="{{ route('project.index') }}">proyectos</a> y <a class="link-on-bg" href="{{ route('cv.index') }}">CV</a>.
                 </div><!--//bio-->
                 <div class="mb-4">
-                    <a class="btn btn-primary mr-2 mb-3" href="{{ url('/proyectos') }}"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">Ver</span> proyectos</a>
-                    <a class="btn btn-secondary mb-3" href="{{ url('/cv')}}"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline">Ver</span> CV</a>
+                    <a class="btn btn-primary mr-2 mb-3" href="{{ route('project.index') }}"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">Ver</span> proyectos</a>
+                    <a class="btn btn-secondary mb-3" href="{{ route('cv.index')}}"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline">Ver</span> CV</a>
                 </div>
             </div><!--//media-body-->
             <img class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" src="{{ asset('images/web-development.png') }}" alt="">
@@ -117,7 +127,7 @@
                 </div><!--//card-->
             </div><!--//col-->
         </div><!--//row-->
-        <div class="text-center py-3"><a href="{{ url('/proyectos') }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Ver todos los proyectos</a></div>
+        <div class="text-center py-3"><a href="{{ route('project.index') }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Ver todos los proyectos</a></div>
 
     </div><!--//container-->
 </section><!--//featured-section-->
@@ -129,16 +139,26 @@
         <h2 class="section-title font-weight-bold mb-5">Últimas publicaciones</h2>
         <div class="row">
             @foreach ($recentPosts as $post)
-                <div class="col-md-4 mb-5 post">
+                <div class="col-md-4 mb-3">
                     <div class="card blog-post-card">
                         <img class="card-img-top" src="{{ $post->featured_image }}" alt="image">
                         <div class="card-body">
-                            <h5 class="card-title"><a class="theme-link" href="{{ url('/blog/' . $post->slug) }}">{{ $post->title}}</a></h5>
+                            <h5 class="card-title"><a class="theme-link" href="{{ route('blog.show', $post->slug) }}">{{ $post->title}}</a></h5>
                             <p class="card-text">{{ $post->summary }}</p>
-                            <p class="mb-0"><a class="more-link" href="{{ url('/blog/' . $post->slug) }}">Leer más &rarr;</a></p>
+                            <i class="fas fa-tags"></i>
+                            @foreach ($post->tags as $tag)
+                                <span class="label info">{{ $tag->name }}</span>
+                            @endforeach
                         </div>
                         <div class="card-footer">
+                            <i class="far fa-calendar-alt"></i>
                             <small class="text-muted">{{ $post->published_at->format('d M Y') }}</small>
+                            &nbsp;&nbsp;
+                            <i class="far fa-eye"></i>
+                            <small class="text-muted">{{ count($post->views) }}</small>
+                            &nbsp;&nbsp;
+                            <i class="far fa-clock"></i>
+                            <small class="text-muted">{{ readingTime($post->body) }}</small>
                         </div>
                     </div><!--//card-->
                 </div><!--//col-->

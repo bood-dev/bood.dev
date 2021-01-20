@@ -29,13 +29,10 @@
 </head>
 
 <body>
-
     @include('layout.sidebar')
 
 	<div class="main-wrapper">
-
         @yield('content')
-
 	</div><!--//main-wrapper-->
 
 	<!-- Javascript -->

@@ -14,7 +14,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $recentPosts = Post::published()
+        $recentPosts = Post::with('tags', 'views')
+            ->published()
             ->orderBy('published_at')
             ->simplePaginate(3);
 
