@@ -23,17 +23,16 @@
 
 	<!-- Theme CSS -->
 	<link id="theme-style" rel="stylesheet" href="{{ asset('css/theme-1.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+
+    @yield('stylesheets')
 </head>
 
 <body>
-
     @include('layout.sidebar')
 
 	<div class="main-wrapper">
-
         @yield('content')
-
 	</div><!--//main-wrapper-->
 
 	<!-- Javascript -->

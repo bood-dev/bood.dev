@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b32ce752560cf79774340f8963c77371",
+    "content-hash": "8d3308ca2dfe2298a606cf644dce7bd5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -57,6 +57,75 @@
                 "stack"
             ],
             "time": "2019-12-24T22:41:47+00:00"
+        },
+        {
+            "name": "austintoddj/canvas",
+            "version": "v6.0.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/austintoddj/canvas.git",
+                "reference": "03a7f78d78a471d9e1f75ccccd800cd34e591802"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/austintoddj/canvas/zipball/03a7f78d78a471d9e1f75ccccd800cd34e591802",
+                "reference": "03a7f78d78a471d9e1f75ccccd800cd34e591802",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^6.0|^7.0|^8.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "laravel/legacy-factories": "^1.0",
+                "mockery/mockery": "^1.4",
+                "orchestra/testbench": "^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Canvas\\CanvasServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Canvas\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Todd Austin",
+                    "email": "austin.todd.j@gmail.com"
+                }
+            ],
+            "description": "A Laravel publishing platform",
+            "homepage": "https://trycanvas.app",
+            "keywords": [
+                "blog",
+                "canvas",
+                "laravel",
+                "platform",
+                "publishing"
+            ],
+            "support": {
+                "issues": "https://github.com/austintoddj/canvas/issues",
+                "source": "https://github.com/austintoddj/canvas"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/austintoddj",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-01-07T20:16:32+00:00"
         },
         {
             "name": "brick/math",
@@ -3872,58 +3941,6 @@
             "time": "2020-09-18T14:27:32+00:00"
         },
         {
-            "name": "themsaid/wink",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/themsaid/wink.git",
-                "reference": "cdbb27a9b7f563b9a97080509e6c9257f1a9dcfd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/themsaid/wink/zipball/cdbb27a9b7f563b9a97080509e6c9257f1a9dcfd",
-                "reference": "cdbb27a9b7f563b9a97080509e6c9257f1a9dcfd",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^7.0||^8.0",
-                "php": "^7.3||^7.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Wink\\WinkServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Wink\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mohamed Said",
-                    "email": "mohamed@laravel.com"
-                }
-            ],
-            "description": "Wink Publishing Framework.",
-            "keywords": [
-                "blog",
-                "framework",
-                "laravel"
-            ],
-            "time": "2020-09-22T14:01:32+00:00"
-        },
-        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.3",
             "source": {
@@ -6091,5 +6108,6 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }

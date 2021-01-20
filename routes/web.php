@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Symfony\Component\CssSelector\Node\FunctionNode;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,11 +15,10 @@ use Symfony\Component\CssSelector\Node\FunctionNode;
 
 Route::get('/', 'HomeController@index')->name('home.index');
 
-Route::get('/cv', function() {
-    return view('cv');
-})->name('cv.index');
+Route::get('/projects', 'ProjectController@index')->name('project.index');
+Route::get('/projects/{slug}', 'ProjectController@show')->name('project.show');
+
+Route::get('/cv', 'CVController@index')->name('cv.index');
 
 Route::get('/blog', 'BlogController@index')->name('blog.index');
 Route::get('/blog/{slug}', 'BlogController@show')->name('blog.show');
-
-Route::get('/proyectos', 'ProjectController@index')->name('project.index');
