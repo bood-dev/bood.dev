@@ -23,7 +23,7 @@
                     <label class="sr-only" for="semail">Correo electrónico</label>
                     <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Correo electrónico" autocomplete="off" autofocus>
                 </div>
-                <button type="submit" class="btn btn-primary">Suscribirse</button>
+                <button type="submit" class="btn btn-default" disabled>Suscribirse</button>
             </form>
         </div><!--//container-->
     </section>
@@ -34,7 +34,7 @@
                 @foreach ($posts as $post)
                     <div class="col-md-4 mb-3">
                         <div class="card blog-post-card">
-                            <img class="card-img-top" src="{{ $post->featured_image }}" alt="image">
+                            <img class="card-img-top" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}">
                             <div class="card-body">
                                 <h5 class="card-title"><a class="theme-link" href="{{ route('blog.show', $post->slug) }}">{{ $post->title}}</a></h5>
                                 <p class="card-text">{{ $post->summary }}</p>

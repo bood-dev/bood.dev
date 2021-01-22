@@ -37,7 +37,7 @@
 <section class="overview-section p-3 p-lg-5">
     <div class="container">
         <h2 class="section-title font-weight-bold mb-3">¿Qué hago?</h2>
-        <div class="section-intro mb-5">Cuento con 5 años de experiencia desarrollando y analizando software.
+        <div class="section-intro mb-5">Cuento con {{ date('Y') - 2015 }} años de experiencia desarrollando y analizando software.
             <br>Aquí hay un breve resumen del stack tecnológico que utilizo. Puedes consultar más información visitando mi <a href="resume.html">CV</a>.</div>
         <div class="row">
             <div class="item col-6 col-lg-3">
@@ -141,7 +141,7 @@
             @foreach ($recentPosts as $post)
                 <div class="col-md-4 mb-3">
                     <div class="card blog-post-card">
-                        <img class="card-img-top" src="{{ $post->featured_image }}" alt="image">
+                        <img class="card-img-top" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}">
                         <div class="card-body">
                             <h5 class="card-title"><a class="theme-link" href="{{ route('blog.show', $post->slug) }}">{{ $post->title}}</a></h5>
                             <p class="card-text">{{ $post->summary }}</p>

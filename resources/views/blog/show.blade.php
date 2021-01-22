@@ -43,7 +43,7 @@
 
             <div class="blog-post-body">
                 <figure class="blog-banner">
-                    <img class="img-fluid" src="{{ $post->featured_image }}" alt="image">
+                    <img class="img-fluid" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}">
                 </figure>
 
                 {!! $post->body !!}
