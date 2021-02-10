@@ -18,14 +18,14 @@
                 <div class="row align-items-center">
                     <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
                         <h2 class="resume-name mb-0 text-uppercase">Brandon Ortiz</h2>
-                        <div class="resume-tagline mb-3 mb-md-0">Lic. en Multimedia y Animación Digital</div>
+                        <div class="resume-tagline mb-3 mb-md-0">Application Security Engineer</div>
                     </div><!--//resume-title-->
                     <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i><a class="resume-link" href="tel:8186573897">81 8657 3897</a></li>
                             <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="mailto:bood.dev@gmail.com">bood.dev@gmail.com</a></li>
                             <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a href="https://bood.dev" class="resume-link" target="_blank">https://bood.dev</a></li>
-                            <li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>Monterrey, Nuevo León</li>
+                            <li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>Nuevo León</li>
                         </ul>
                     </div><!--//resume-contact-->
                 </div><!--//row-->
@@ -67,7 +67,6 @@
                                         <li>Diseñar y presentar pruebas de concepto de aplicaciones para la remediación efectiva de vulnerabilidades por parte del equipo de desarrollo.</li>
                                         <li>Mantenimiento de documentación técnica de certificados TLS/SSL.</li>
                                         <li>Administración de políticas, alertas y reportes del WAF y DBF de SecureSphere de Imperva.</li>
-                                        <li>Creación de alertas y reportes en Splunk (SIEM) para el monitoreo de ejecuciones de jobs y eventos de seguridad en servidores.</li>
                                     </ul>
                                 </div>
                             </div><!--//item-->
@@ -95,7 +94,10 @@
                             <div class="item mb-3">
                                 <div class="item-heading row align-items-center mb-2">
                                     <h4 class="item-title col-12 col-md-8 col-lg-8 mb-2 mb-md-0">Certified Application Security Engineer - .NET</h4>
-                                    <div class="item-meta col-12 col-md-4 col-lg-4 text-muted text-left text-md-right"><strong>EC-Council</strong> | 2021 (en curso)</div>
+                                    <div class="item-meta col-12 col-md-4 col-lg-4 text-muted text-left text-md-right"><strong>EC-Council</strong> | 2021</div>
+                                </div>
+                                <div class="item-content">
+                                    <p>Número de certificación: <a href="https://aspen.eccouncil.org/verify" target="_blank">ECC9280617354</a></p>
                                 </div>
                             </div>
                             <div class="item mb-3">
@@ -105,7 +107,6 @@
                                 </div>
                                 <div class="item-content">
                                     <p>Reconocimiento de alumno destacado, de marzo de 2013 a marzo de 2016.</p>
-                                    <p>Expositor en <i>"ExpoLMAD"</i> con un <a href="#" class="theme-link">proyecto de realidad virtual</a> para realizar simulaciones de canotaje (Desarrollado para un Oculus Rift en C# con Unity, y la estructura controlada con Arduino).</p>
                                 </div>
                             </div><!--//item-->
                         </section><!--//project-section-->
@@ -135,19 +136,19 @@
                     <aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
                         <section class="skills-section py-3">
                             <h3 class="text-uppercase resume-section-heading mb-4">Habilidades</h3>
-                            <div class="item">
-                                <h4 class="item-title">Técnicas</h4>
-                                <ul class="list-unstyled resume-skills-list">
-                                    <li class="mb-2">HTML5, CSS3, Javascript</li>
-                                    <li class="mb-2">Python / burpSuite<li>
-                                    <li class="mb-2">Node.js / JWT</li>
-                                    <li class="mb-2">ASP.NET / C#, VB / MSSQL</li>
-                                    <li class="mb-2">PHP / Laravel / MySQL</li>
-                                    <li class="mb-2">Cordova / Ionic</li>
-                                    <li class="mb-2">IIS / Apache-Tomcat</li>
-                                    <li class="mb-2">Docker</li>
-                                    <li class="mb-2">GIT / TFS</li>
-                                </ul>
+                                <div class="item">
+                                    <h4 class="item-title">Técnicas</h4>
+                                    <ul class="list-unstyled resume-skills-list">
+                                        <li class="mb-2">HTML5, CSS3, Javascript</li>
+                                        <li class="mb-2">Python / burpSuite<li>
+                                        <li class="mb-2">Node.js / JWT</li>
+                                        <li class="mb-2">ASP.NET / C#, VB / MSSQL</li>
+                                        <li class="mb-2">PHP / Laravel / MySQL</li>
+                                        <li class="mb-2">Cordova / Ionic</li>
+                                        <li class="mb-2">IIS / Apache-Tomcat</li>
+                                        <li class="mb-2">Docker</li>
+                                        <li class="mb-2">GIT / TFS</li>
+                                    </ul>
                                 </div><!--//item-->
                                 <div class="item">
                                     <h4 class="item-title">Profesionales</h4>
@@ -158,7 +159,11 @@
                                         <li class="mb-2">Rápido aprendizaje</li>
                                         <li class="mb-2">Ejecución</li>
                                     </ul>
-                                    </div><!--//item-->
+                                </div><!--//item-->
+                                <div class="item">
+                                    <h4 class="item-title">Certificaciones</h4>
+                                    <img src="{{ asset('images/CASE.NET-Logo-Black.jpg')}}" alt="CASE .NET" style="width: 100%;">
+                                </div>
                         </section><!--//skills-section-->
                     </aside><!--//resume-aside-->
                 </div><!--//row-->
