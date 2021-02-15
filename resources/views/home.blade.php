@@ -20,9 +20,9 @@
 
             <div class="media-body">
                 <h2 class="name font-weight-bold mb-1">Brandon Ortiz</h2>
-                <div class="tagline mb-3">Lic. en Multimedia y Animación Digital</div>
-                <div class="bio mb-4">Desarrollador y analista de seguridad de software, interesado en temas de front-end y back-end y en entender como funcionan las cosas. Escribo sobre temas de seguridad enfocados al desarrollo de aplicaciones en <a class="link-on-bg" href="{{ route('blog.index') }}">mi blog</a>.
-                    <br>¿Quieres saber cómo te puedo ayudar con tus ideas? Revisa mis <a class="link-on-bg" href="{{ route('project.index') }}">proyectos</a> y <a class="link-on-bg" href="{{ route('cv.index') }}">CV</a>.
+                <div class="tagline mb-3">Ingeniero en Seguridad de Aplicaciones</div>
+                <div class="bio mb-4">Desarrollador y analista de seguridad de software, interesado en temas de programación en general y en entender como funcionan las cosas. Escribo sobre temas de seguridad enfocados al desarrollo de aplicaciones en mi<a class="link-on-bg" href="{{ route('blog.index') }}"><strong> blog</strong></a>.
+                    <br>¿Quieres saber cómo te puedo ayudar con tus ideas? Revisa mis <a class="link-on-bg" href="{{ route('project.index') }}"><strong>proyectos</strong></a> y <a class="link-on-bg" href="{{ route('cv.index') }}"><strong>CV</strong></a>.
                 </div><!--//bio-->
                 <div class="mb-4">
                     <a class="btn btn-primary mr-2 mb-3" href="{{ route('project.index') }}"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">Ver</span> proyectos</a>
@@ -38,7 +38,7 @@
     <div class="container">
         <h2 class="section-title font-weight-bold mb-3">¿Qué hago?</h2>
         <div class="section-intro mb-5">Cuento con {{ date('Y') - 2015 }} años de experiencia desarrollando y analizando software.
-            <br>Aquí hay un breve resumen del stack tecnológico que utilizo. Puedes consultar más información visitando mi <a href="resume.html">CV</a>.</div>
+            <br>Aquí hay un breve resumen del stack tecnológico que utilizo. Puedes consultar más información visitando mi <a href="{{ route('cv.index')}}"><strong>CV</strong></a>.</div>
         <div class="row">
             <div class="item col-6 col-lg-3">
                 <div class="item-inner">

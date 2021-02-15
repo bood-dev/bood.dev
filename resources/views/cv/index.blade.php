@@ -10,15 +10,14 @@
             <a class="btn btn-primary" href="{{ asset('CV - Brandon Ortiz.pdf') }}" target="_blank"><i class="fas fa-file-pdf mr-2"></i>Descargar PDF</a>
         </div><!--//container-->
     </section>
-
+    
     <div class="container px-3 px-lg-5">
         <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
-
             <div class="resume-header">
                 <div class="row align-items-center">
                     <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
                         <h2 class="resume-name mb-0 text-uppercase">Brandon Ortiz</h2>
-                        <div class="resume-tagline mb-3 mb-md-0">Application Security Engineer</div>
+                        <div class="resume-tagline mb-3 mb-md-0">Ingeniero en Seguridad de Aplicaciones</div>
                     </div><!--//resume-title-->
                     <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
                         <ul class="list-unstyled mb-0">
@@ -168,15 +167,15 @@
                     </aside><!--//resume-aside-->
                 </div><!--//row-->
             </div><!--//resume-body-->
-                    <hr>
-                    <div class="resume-footer text-center">
-                        <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-                            <li class="list-inline-item mb-lg-0 mr-lg-3"><a class="resume-link" href="https://twitter.com/_bood" target="_blank"><i class="fab fa-twitter-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@_bood</span></a></li>
-                            <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://linkedin.com/in/brandon-ortiz" target="_blank"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/brandon-ortiz</span></a></li>
-                            <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://github.com/bood-dev" target="_blank"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/bood-dev</span></a></li>
-                        </ul>
-                    </div><!--//resume-footer-->
-                </article>
+            <hr>
+            <div class="resume-footer text-center">
+                <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+                    <li class="list-inline-item mb-lg-0 mr-lg-3"><a class="resume-link" href="https://twitter.com/_bood" target="_blank"><i class="fab fa-twitter-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@_bood</span></a></li>
+                    <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://linkedin.com/in/brandon-ortiz" target="_blank"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/brandon-ortiz</span></a></li>
+                    <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://github.com/bood-dev" target="_blank"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/bood-dev</span></a></li>
+                </ul>
+            </div><!--//resume-footer-->
+        </article>
+    </div><!--//container-->
 
-            </div><!--//container-->
 @endsection
