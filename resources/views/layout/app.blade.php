@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGS449BR8V"></script>
+	<script>
+		if (document.location.hostname.search("bood.dev") !== -1) {
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-EGS449BR8V');
+		}
+	</script>
+	<!-- Required meta tags -->
+
 	<title>@yield('title')</title>
 
 	<!-- Meta -->
