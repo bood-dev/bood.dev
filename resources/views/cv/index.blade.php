@@ -170,9 +170,9 @@
             <hr>
             <div class="resume-footer text-center">
                 <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-                    <li class="list-inline-item mb-lg-0 mr-lg-3"><a class="resume-link" href="https://twitter.com/_bood" target="_blank"><i class="fab fa-twitter-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@_bood</span></a></li>
-                    <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://linkedin.com/in/brandon-ortiz" target="_blank"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/brandon-ortiz</span></a></li>
-                    <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://github.com/bood-dev" target="_blank"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/bood-dev</span></a></li>
+                    <li class="list-inline-item mb-lg-0 mr-lg-3"><a class="resume-link" href="https://twitter.com/_bood" target="_blank" rel="noopener"><i class="fab fa-twitter-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">@_bood</span></a></li>
+                    <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://linkedin.com/in/brandon-ortiz" target="_blank" rel="noopener"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/brandon-ortiz</span></a></li>
+                    <li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://github.com/bood-dev" target="_blank" rel="noopener"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/bood-dev</span></a></li>
                 </ul>
             </div><!--//resume-footer-->
         </article>

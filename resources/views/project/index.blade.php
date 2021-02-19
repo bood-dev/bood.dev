@@ -28,7 +28,7 @@
                     <div class="card project-card">
                         <div class="row no-gutters">
                             <div class="col-lg-4 card-img-holder">
-                                <img src="{{ asset('/images/proyectos/GTA/home.PNG')}}" class="card-img" alt="Gestión Total de Avalúos">
+                                <img src="{{ asset('/images/proyectos/GTA/home.PNG')}}" width="180" height="240" class="card-img" alt="Gestión Total de Avalúos">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
@@ -51,7 +51,7 @@
                     <div class="card project-card">
                         <div class="row no-gutters">
                             <div class="col-lg-4 card-img-holder">
-                                <img src="{{ asset('/images/proyectos/SCASTI/home.PNG') }}" class="card-img" alt="Página SCASTI">
+                                <img src="{{ asset('/images/proyectos/SCASTI/home.PNG') }}" width="180" height="240" class="card-img" alt="Página SCASTI">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
@@ -74,7 +74,7 @@
                     <div class="card project-card">
                         <div class="row no-gutters">
                             <div class="col-lg-4 card-img-holder">
-                                <img src="{{ asset('/images/proyectos/SGSI/home.jpg') }}" class="card-img" alt="Sistema de Gestión de Seguridad de la Información">
+                                <img src="{{ asset('/images/proyectos/SGSI/home.jpg') }}" width="180" height="240" class="card-img" alt="Sistema de Gestión de Seguridad de la Información">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
@@ -97,7 +97,7 @@
                     <div class="card project-card">
                         <div class="row no-gutters">
                             <div class="col-lg-4 card-img-holder">
-                                <img src="{{ asset('/images/proyectos/Asproem/home.png') }}" class="card-img" alt="Asproem">
+                                <img src="{{ asset('/images/proyectos/Asproem/home.png') }}" width="180" height="240" class="card-img" alt="Asproem">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
@@ -120,7 +120,7 @@
                     <div class="card project-card">
                         <div class="row no-gutters">
                             <div class="col-lg-4 card-img-holder">
-                                <img src="{{ asset('/images/proyectos/ViveroSanMiguel/home.png') }}" class="card-img" alt="Vivero San Miguel">
+                                <img src="{{ asset('/images/proyectos/ViveroSanMiguel/home.png') }}" width="180" height="240" class="card-img" alt="Vivero San Miguel">
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
