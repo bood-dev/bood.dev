@@ -872,7 +872,7 @@
 	</div><!--//main-wrapper-->
 
 	<!-- Javascript -->
-	<script src="{{ asset('plugins/jquery-3.4.1.min.js') }}"></script>
+	<script src="{{ asset('plugins/jquery-3.5.0.min.js') }}"></script>
 	<script src="{{ asset('plugins/popper.min.js') }}"></script>
 	<script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
 

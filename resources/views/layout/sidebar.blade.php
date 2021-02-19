@@ -10,12 +10,12 @@
 
             <div id="navigation" class="collapse navbar-collapse flex-column" >
                 <div class="profile-section pt-3 pt-lg-0">
-                    <img class="profile-image mb-3 rounded-circle mx-auto" src="{{ asset('images/avatar.png') }}" alt="Brandon Ortiz">
+                    <img class="profile-image mb-3 rounded-circle mx-auto" src="{{ asset('images/avatar.png') }}" width="160" height="170" alt="Brandon Ortiz">
 
                     <ul class="social-list list-inline py-2 mx-auto">
-                        <li class="list-inline-item"><a href="https://twitter.com/_bood" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="https://linkedin.com/in/brandon-ortiz" target="_blank"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/bood-dev" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/_bood" target="_blank" rel="noopener"><i class="fab fa-twitter fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://linkedin.com/in/brandon-ortiz" target="_blank" rel="noopener"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/bood-dev" target="_blank" rel="noopener"><i class="fab fa-github-alt"></i></a></li>
                     </ul><!--//social-list-->
                     <hr>
                 </div><!--//profile-section-->

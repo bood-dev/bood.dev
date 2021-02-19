@@ -29,7 +29,7 @@
                     <a class="btn btn-secondary mb-3" href="{{ route('cv.index')}}"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline">Ver</span> CV</a>
                 </div>
             </div><!--//media-body-->
-            <img class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" src="{{ asset('images/web-development.png') }}" alt="">
+            <img class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" src="{{ asset('images/web-development.png') }}" width="400" height="300" alt="Web Development">
         </div>
     </div>
 </section><!--//about-me-section-->
@@ -82,7 +82,7 @@
                 <div class="card project-card">
                     <div class="row no-gutters">
                         <div class="col-lg-4 card-img-holder">
-                            <img src="{{ asset('images/proyectos/GTA/home.PNG') }}" class="card-img" alt="image">
+                            <img src="{{ asset('images/proyectos/GTA/home.PNG') }}" width="180" height="240" class="card-img" alt="image">
                         </div>
                         <div class="col-lg-8">
                             <div class="card-body">
@@ -106,7 +106,7 @@
                 <div class="card project-card">
                     <div class="row no-gutters">
                         <div class="col-lg-4 card-img-holder">
-                            <img src="{{ asset('images/proyectos/SCASTI/home.PNG') }}" class="card-img" alt="Página SCASTI">
+                            <img src="{{ asset('images/proyectos/SCASTI/home.PNG') }}" width="180" height="240" class="card-img" alt="Página SCASTI">
                         </div>
                         <div class="col-lg-8">
                             <div class="card-body">
