@@ -795,7 +795,7 @@
 		.project-card {
 			border-radius: 0;
 			background: #fafafa;
-			border: 1px solid rgba(0,0,0,0.025);
+			border: 5px solid rgba(0,0,0,0.025);
 			position: relative;
 			height: 100%
 		}

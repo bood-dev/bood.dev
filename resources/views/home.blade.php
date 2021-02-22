@@ -4,16 +4,6 @@
 @section('title', 'bood | Home')
 
 @section('content')
-<style>
-    .label {
-        color: white;
-        padding: 4px;
-        border-radius: 5px;
-    }
-
-    .info { background-color: #2196F3; }
-</style>
-
 <section class="about-me-section p-3 p-lg-5 theme-bg-light">
     <div class="container">
         <div class="profile-teaser media flex-column flex-lg-row">
@@ -36,7 +26,7 @@
 
 <section class="overview-section p-3 p-lg-5">
     <div class="container">
-        <h2 class="section-title font-weight-bold mb-3">¿Qué hago?</h2>
+        <h2 class="section-title font-weight-bold mb-3">&#129300;¿Qué hago?</h2>
         <div class="section-intro mb-5">Cuento con {{ date('Y') - 2015 }} años de experiencia desarrollando y analizando software.
             <br>Aquí hay un breve resumen del stack tecnológico que utilizo. Puedes consultar más información visitando mi <a href="{{ route('cv.index')}}"><strong>CV</strong></a>.</div>
         <div class="row">
@@ -50,7 +40,7 @@
             <div class="item col-6 col-lg-3">
                 <div class="item-inner">
                     <div class="item-icon"><i class="fab fa-php"></i> <i class="fab fa-laravel" style="color: tomato;"></i> <i class="fas fa-database" style="color: cornflowerblue"></i></div>
-                    <h3 class="item-title">PHP, Laravel, Composer &amp; MySQL</h3>
+                    <h3 class="item-title">PHP, Laravel &amp; MySQL</h3>
                     <div class="item-desc">Desarrollo de aplicaciones web administrativas y APIs REST con Laravel 7.x y MySQL. </div>
                 </div><!--//item-inner-->
             </div><!--//item-->
@@ -76,9 +66,9 @@
 
 <section class="featured-section p-3 p-lg-5">
     <div class="container">
-        <h2 class="section-title font-weight-bold mb-5">Proyectos destacados</h2>
+        <h2 class="section-title font-weight-bold mb-5">&#128187;Proyectos destacados</h2>
         <div class="row">
-            <div class="col-md-6 mb-5">
+            <div class="col-md-6 col-sm-12 mb-5">
                 <div class="card project-card">
                     <div class="row no-gutters">
                         <div class="col-lg-4 card-img-holder">
@@ -86,23 +76,15 @@
                         </div>
                         <div class="col-lg-8">
                             <div class="card-body">
-                                <h5 class="card-title"><a href="portfolio/project-1.html" class="theme-link">Gestión Total de Avalúos</a></h5>
+                                <h5 class="card-title"><a href="#" class="theme-link">Gestión Total de Avalúos</a></h5>
                                 <p class="card-text">Plataforma para control, administración de información y documentos de avalúos.</p>
                                 <p class="card-text"><small class="text-muted">Cliente: Valor Total</small></p>
                             </div>
                         </div>
                     </div>
-                    <div class="link-mask">
-                        <a class="link-mask-link" href="portfolio/project-1.html"></a>
-                        <div class="link-mask-text">
-                            <a class="btn btn-secondary" href="portfolio/project-1.html">
-                                <i class="fas fa-eye mr-2"></i>Ver caso de estudio
-                            </a>
-                        </div>
-                    </div><!--//link-mask-->
                 </div><!--//card-->
             </div><!--//col-->
-            <div class="col-md-6 mb-5">
+            <div class="col-sm-12 col-md-6 mb-5">
                 <div class="card project-card">
                     <div class="row no-gutters">
                         <div class="col-lg-4 card-img-holder">
@@ -110,25 +92,16 @@
                         </div>
                         <div class="col-lg-8">
                             <div class="card-body">
-                                <h5 class="card-title"><a href="portfolio/project-scasti.html" class="theme-link">SCASTI</a></h5>
+                                <h5 class="card-title"><a href="#" class="theme-link">SCASTI</a></h5>
                                 <p class="card-text">Desarrollo de página web para consultoría de seguridad de la información.</p>
                                 <p class="card-text"><small class="text-muted">Cliente: SCASTI</small></p>
                             </div>
                         </div>
                     </div>
-                    <div class="link-mask">
-                        <a class="link-mask-link" href="portfolio/project-scasti.html"></a>
-                        <div class="link-mask-text">
-                            <a class="btn btn-secondary" href="portfolio/project-scasti.html">
-                                <i class="fas fa-eye mr-2"></i>Ver caso de estudio
-                            </a>
-                        </div>
-                    </div><!--//link-mask-->
                 </div><!--//card-->
             </div><!--//col-->
         </div><!--//row-->
         <div class="text-center py-3"><a href="{{ route('project.index') }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Ver todos los proyectos</a></div>
-
     </div><!--//container-->
 </section><!--//featured-section-->
 
@@ -136,18 +109,23 @@
 
 <section class="latest-blog-section p-3 p-lg-5">
     <div class="container">
-        <h2 class="section-title font-weight-bold mb-5">Últimas publicaciones</h2>
+        <h2 class="section-title font-weight-bold mb-5">&#128221;Últimas publicaciones</h2>
         <div class="row">
             @foreach ($recentPosts as $post)
                 <div class="col-md-4 mb-3">
                     <div class="card blog-post-card">
-                        <img class="card-img-top" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}">
+                        <img class="card-img-top" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}" width="350" height="220">
                         <div class="card-body">
                             <h5 class="card-title"><a class="theme-link" href="{{ route('blog.show', $post->slug) }}">{{ $post->title}}</a></h5>
                             <p class="card-text">{{ $post->summary }}</p>
+                            <i class="fas fa-hashtag"></i>
+                            @foreach ($post->topic as $topic)
+                                <strong>{{ $topic->name }}</strong>
+                            @endforeach
+                            <br>
                             <i class="fas fa-tags"></i>
                             @foreach ($post->tags as $tag)
-                                <span class="label info">{{ $tag->name }}</span>
+                                {{ $tag->name }}
                             @endforeach
                         </div>
                         <div class="card-footer">
