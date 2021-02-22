@@ -4,29 +4,25 @@
 @section('title', 'bood | ' . $post->title)
 
 @section('stylesheets')
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/solarized-light.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 @endsection
 
 @section('content')
-    <style>
-        .label {
-            color: white;
-            padding: 2px 8px 4px 8px;
-            border-radius: 5px;
-        }
-
-        .info { background-color: #2196F3; }
-    </style>
-
     <article class="blog-post px-3 py-5 p-md-5">
         <div class="container single-col-max-width">
             <header class="blog-post-header">
                 <h2 class="title mb-2">{{ $post->title }}</h2>
                 <div class="mb-3">
+                    <i class="fas fa-hashtag"></i>
+                    @foreach ($post->topic as $topic)
+                        <strong>{{ $topic->name }}</strong>
+                    @endforeach
+                    <br>
+                    <i class="fas fa-tags"></i>
                     @foreach ($post->tags as $tag)
-                        <span class="label info">{{ $tag->name }}</span>
+                        {{ $tag->name }}
                     @endforeach
                 </div>
                 <div class="meta mb-3">
@@ -44,6 +40,7 @@
             <div class="blog-post-body">
                 <figure class="blog-banner">
                     <img class="img-fluid" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}">
+                    <figcaption class="mt-2 text-center image-caption">Illustration by: <a href="https://storyset.com/technology" target="_blank">Freepik Storyset</a></figcaption>
                 </figure>
 
                 {!! $post->body !!}

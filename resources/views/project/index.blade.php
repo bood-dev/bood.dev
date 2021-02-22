@@ -32,19 +32,12 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="#">Gestión Total de Avalúos</a></h5>
+                                    <h5 class="card-title"><a href="#" class="theme-link">Gestión Total de Avalúos</a></h5>
                                     <p class="card-text">Plataforma para control, administración de información y documentos de avalúos.</p>
                                     <p class="card-text"><small class="text-muted">Cliente: Valor Total</small></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="link-mask">
-                            <div class="link-mask-text">
-                                <a class="btn btn-secondary" href="#">
-                                    <i class="fas fa-eye mr-2"></i>Ver caso de estudio
-                                </a>
-                            </div>
-                        </div><!--//link-mask-->
                     </div><!--//card-->
                 </div><!--//col-->
                 <div class="isotope-item col-md-6 mb-5 backend frontend">
@@ -55,19 +48,12 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="#">SCASTI</a></h5>
+                                    <h5 class="card-title"><a href="#" class="theme-link">SCASTI</a></h5>
                                     <p class="card-text">Desarrollo de página web para consultoría de seguridad de la información.</p>
                                     <p class="card-text"><small class="text-muted">Cliente: SCASTI</small></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="link-mask">
-                            <div class="link-mask-text">
-                                <a class="btn btn-secondary" href="#">
-                                    <i class="fas fa-eye mr-2"></i>Ver caso de estudio
-                                </a>
-                            </div>
-                        </div><!--//link-mask-->
                     </div><!--//card-->
                 </div><!--//col-->
                 <div class="isotope-item col-md-6 mb-5 backend frontend">
@@ -78,19 +64,12 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="#">SGSI</a></h5>
+                                    <h5 class="card-title"><a href="#" class="theme-link">SGSI</a></h5>
                                     <p class="card-text">Sistema para seguimiento y revisión de controles del departamento de seguridad de la información.</p>
                                     <p class="card-text"><small class="text-muted">Cliente: Dimex</small></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="link-mask">
-                            <div class="link-mask-text">
-                                <a class="btn btn-secondary" href="#">
-                                    <i class="fas fa-eye mr-2"></i>Ver caso de estudio
-                                </a>
-                            </div>
-                        </div><!--//link-mask-->
                     </div><!--//card-->
                 </div><!--//col-->
                 <div class="isotope-item col-md-6 mb-5 frontend">
@@ -101,19 +80,12 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="#">Asproem</a></h5>
+                                    <h5 class="card-title"><a href="#" class="theme-link">Asproem</a></h5>
                                     <p class="card-text">Página web informativa para empresa de asesoría contable y fiscal.</p>
                                     <p class="card-text"><small class="text-muted">Cliente: Asproem</small></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="link-mask">
-                            <div class="link-mask-text">
-                                <a class="btn btn-secondary" href="#">
-                                    <i class="fas fa-eye mr-2"></i>Ver caso de estudio
-                                </a>
-                            </div>
-                        </div><!--//link-mask-->
                     </div><!--//card-->
                 </div><!--//col-->
                 <div class="isotope-item col-md-6 mb-5 frontend">
@@ -124,23 +96,15 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="#">Vivero San Miguel</a></h5>
+                                    <h5 class="card-title"><a href="#" class="theme-link">Vivero San Miguel</a></h5>
                                     <p class="card-text">Página web para mostrar el catálogo de productos.</p>
                                     <p class="card-text"><small class="text-muted">Cliente: Vivero San Miguel</small></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="link-mask">
-                            <div class="link-mask-text">
-                                <a class="btn btn-secondary" href="#">
-                                    <i class="fas fa-eye mr-2"></i>Ver caso de estudio
-                                </a>
-                            </div>
-                        </div><!--//link-mask-->
                     </div><!--//card-->
                 </div><!--//col-->
             </div><!--//row-->
-
         </div>
     </section>
 @endsection

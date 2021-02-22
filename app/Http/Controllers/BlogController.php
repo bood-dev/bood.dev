@@ -14,7 +14,7 @@ class BlogController extends Controller
      */
     public function index()
     {        
-        $posts = Post::with('tags', 'views')
+        $posts = Post::with('tags', 'views', 'topic')
             ->published()
             ->orderBy('published_at')
             ->get();

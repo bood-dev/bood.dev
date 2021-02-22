@@ -8,8 +8,9 @@
 
 .label {
     color: white!important;
-    padding: 4px!important;
+    padding: 2px 8px 4px 8px !important;
     border-radius: 5px!important;
 }
 
 .info { background-color: #2196F3!important; }
+
