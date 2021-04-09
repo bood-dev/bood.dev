@@ -33,10 +33,12 @@
                                     <strong>{{ $topic->name }}</strong>
                                 @endforeach
                                 <br>
-                                <i class="fas fa-tags"></i>
-                                @foreach ($post->tags as $tag)
-                                    {{ $tag->name }}
-                                @endforeach
+                                <div class="meta" style="color: #4f4f4f; font-size: 1rem;">
+                                    <i class="fas fa-tags"></i>
+                                    @foreach ($post->tags as $tag)
+                                        <span>{{ $tag->name }}</span>
+                                    @endforeach
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <i class="far fa-calendar-alt"></i>
