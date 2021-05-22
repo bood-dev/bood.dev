@@ -26,7 +26,7 @@
                         <div class="card blog-post-card">
                             <img class="card-img-top" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}" width="350" height="220">
                             <div class="card-body">
-                                <h5 class="card-title"><a class="theme-link" href="{{ route('blog.show', $post->slug) }}">{{ $post->title}}</a></h5>
+                                <h5 class="card-title"><a class="theme-link" href="{{ LaravelLocalization::localizeUrl(route('blog.show', $post->slug)) }}">{{ $post->title}}</a></h5>
                                 <p class="card-text">{{ $post->summary }}</p>
                                 <i class="fas fa-hashtag"></i>
                                 @foreach ($post->topic as $topic)

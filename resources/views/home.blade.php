@@ -10,13 +10,13 @@
 
             <div class="media-body">
                 <h2 class="name font-weight-bold mb-1">Brandon Ortiz</h2>
-                <div class="tagline mb-3">Ingeniero en Seguridad de Aplicaciones</div>
-                <div class="bio mb-4">Desarrollador y analista de seguridad de software, interesado en temas de programación en general y en entender como funcionan las cosas. Escribo sobre temas de seguridad enfocados al desarrollo de aplicaciones en mi<a class="link-on-bg" href="{{ route('blog.index') }}"><strong> blog</strong></a>.
-                    <br>¿Quieres saber cómo te puedo ayudar con tus ideas? Revisa mis <a class="link-on-bg" href="{{ route('project.index') }}"><strong>proyectos</strong></a> y <a class="link-on-bg" href="{{ route('cv.index') }}"><strong>CV</strong></a>.
+                <div class="tagline mb-3">{{ __('messages.home.position') }}</div>
+                <div class="bio mb-4">Desarrollador y analista de seguridad de software, interesado en temas de programación en general y en entender como funcionan las cosas. Escribo sobre temas de seguridad enfocados al desarrollo de aplicaciones en mi<a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('blog.index')) }}"><strong> blog</strong></a>.
+                    <br>¿Quieres saber cómo te puedo ayudar con tus ideas? Revisa mis <a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}"><strong>proyectos</strong></a> y <a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><strong>CV</strong></a>.
                 </div><!--//bio-->
                 <div class="mb-4">
-                    <a class="btn btn-primary mr-2 mb-3" href="{{ route('project.index') }}"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">Ver</span> proyectos</a>
-                    <a class="btn btn-secondary mb-3" href="{{ route('cv.index')}}"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline">Ver</span> CV</a>
+                    <a class="btn btn-primary mr-2 mb-3" href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">Ver</span> proyectos</a>
+                    <a class="btn btn-secondary mb-3" href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline">Ver</span> CV</a>
                 </div>
             </div><!--//media-body-->
             <img class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" src="{{ asset('images/web-development.png') }}" width="400" height="300" alt="Web Development">
@@ -28,7 +28,7 @@
     <div class="container">
         <h2 class="section-title font-weight-bold mb-3">&#129300;¿Qué hago?</h2>
         <div class="section-intro mb-5">Cuento con {{ date('Y') - 2015 }} años de experiencia desarrollando y analizando software.
-            <br>Aquí hay un breve resumen del stack tecnológico que utilizo. Puedes consultar más información visitando mi <a href="{{ route('cv.index')}}"><strong>CV</strong></a>.</div>
+            <br>Aquí hay un breve resumen del stack tecnológico que utilizo. Puedes consultar más información visitando mi <a href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><strong>CV</strong></a>.</div>
         <div class="row">
             <div class="item col-6 col-lg-3">
                 <div class="item-inner">
@@ -101,7 +101,7 @@
                 </div><!--//card-->
             </div><!--//col-->
         </div><!--//row-->
-        <div class="text-center py-3"><a href="{{ route('project.index') }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Ver todos los proyectos</a></div>
+        <div class="text-center py-3"><a href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Ver todos los proyectos</a></div>
     </div><!--//container-->
 </section><!--//featured-section-->
 
@@ -116,7 +116,7 @@
                     <div class="card blog-post-card">
                         <img class="card-img-top" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}" width="350" height="220">
                         <div class="card-body">
-                            <h5 class="card-title"><a class="theme-link" href="{{ route('blog.show', $post->slug) }}">{{ $post->title}}</a></h5>
+                            <h5 class="card-title"><a class="theme-link" href="{{ LaravelLocalization::localizeUrl(route('blog.show', $post->slug)) }}">{{ $post->title}}</a></h5>
                             <p class="card-text">{{ $post->summary }}</p>
                             <i class="fas fa-hashtag"></i>
                             @foreach ($post->topic as $topic)
@@ -144,7 +144,7 @@
                 </div><!--//col-->
             @endforeach
         </div><!--//row-->
-        <div class="text-center py-3"><a href="{{ route('blog.index') }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Ver blog completo</a></div>
+        <div class="text-center py-3"><a href="{{ LaravelLocalization::localizeUrl(route('blog.index')) }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Ver blog completo</a></div>
     </div><!--//container-->
 
 </section><!--//latest-blog-section-->
