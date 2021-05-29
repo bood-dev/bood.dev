@@ -11,7 +11,7 @@
             <div class="media-body">
                 <h2 class="name font-weight-bold mb-1">Brandon Ortiz</h2>
                 <div class="tagline mb-3">{{ __('messages.home.position') }}</div>
-                <div class="bio mb-4">Desarrollador y analista de seguridad de software, interesado en temas de programación en general y en entender como funcionan las cosas. Escribo sobre temas de seguridad enfocados al desarrollo de aplicaciones en mi<a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('blog.index')) }}"><strong> blog</strong></a>.
+                <div class="bio mb-4">{{ __('messages.home.bio') }}<a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('blog.index')) }}"><strong> blog</strong></a>.
                     <br>¿Quieres saber cómo te puedo ayudar con tus ideas? Revisa mis <a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}"><strong>proyectos</strong></a> y <a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><strong>CV</strong></a>.
                 </div><!--//bio-->
                 <div class="mb-4">
