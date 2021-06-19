@@ -51,10 +51,10 @@
                     <hr class="mb-4">
                     <h4 class="toggle-name mb-3 "><i class="fas fa-globe mr-1"></i>Idioma</h4>
 
-                    <ul style="list-style-type: none;">
+                    <ul style="list-style-type: none; padding: 0;">
                         @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                            <li>
-                                <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" style="color: white;">
+                            <li class="nav-item">
+                                <a class="nav-link" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}" style="color: rgba(255, 255, 255, 0.8); padding: 2px;">
                                     {{ $properties['native'] }}
                                 </a>
                             </li>

@@ -16,7 +16,11 @@ use Mcamara\LaravelLocalization\LaravelLocalization;
 
 $localization = new LaravelLocalization();
 
-Route::group(['prefix' => $localization->setLocale()], function() {
+Route::group(
+    [
+        'prefix' => $localization->setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    ], function() {
     
     Route::get('/', 'HomeController@index')->name('home.index');
 

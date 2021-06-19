@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ LaravelLocalization::localizeUrl() }}">
+<html lang="{{ LaravelLocalization::getCurrentLocale() }}">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGS449BR8V"></script>
-	<script>
-		if (document.location.hostname.search("bood.dev") !== -1) {
+	@production
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EGS449BR8V"></script>
+		<script>			
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
 			gtag('config', 'G-EGS449BR8V');
-		}
-	</script>
-	<!-- Required meta tags -->
+		</script>
+		<!-- Required meta tags -->
+	@endproduction
+
 
 	<title>@yield('title')</title>
 
@@ -862,6 +863,8 @@
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
     @yield('stylesheets')
+
+	@yield('twitter')
 </head>
 
 <body>
