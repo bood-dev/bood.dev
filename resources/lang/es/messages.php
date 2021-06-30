@@ -1,13 +1,6 @@
 <?php
 
 return [
-
-    'home.position' => 'Ingeniero en Seguridad de Aplicaciones',
-    'home.bio' => 'Desarrollador y analista de seguridad de software, interesado
-         en temas de programación en general y en entender como funcionan las 
-         cosas. Escribo sobre temas de seguridad enfocados al desarrollo de 
-         aplicaciones en mi',
-
     'cv.button' => 'Descargar PDF',
     'cv.bio1' => 'Soy una persona proactiva, responsable, enfocado a proponer 
         soluciones y hacer que las cosas sucedan.',

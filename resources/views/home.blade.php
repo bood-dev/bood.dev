@@ -10,13 +10,13 @@
 
             <div class="media-body">
                 <h2 class="name font-weight-bold mb-1">Brandon Ortiz</h2>
-                <div class="tagline mb-3">{{ __('messages.home.position') }}</div>
-                <div class="bio mb-4">{{ __('messages.home.bio') }}<a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('blog.index')) }}"><strong> blog</strong></a>.
-                    <br>¿Quieres saber cómo te puedo ayudar con tus ideas? Revisa mis <a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}"><strong>proyectos</strong></a> y <a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><strong>CV</strong></a>.
+                <div class="tagline mb-3">{{ __('Application Security Engineer') }}</div>
+                <div class="bio mb-4">{{ __('Developer and software security analyst, interested in programming and knowing how the applications works. I write about application security in my') }} <a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('blog.index')) }}"><strong>blog</strong></a>.
+                    <br>{{ __('Do you wanna know how I can help you with your ideas? Check my') }} <a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}"><strong>{{ __('projects') }}</strong></a> {{ __('and') }} <a class="link-on-bg" href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><strong>{{ __('resume') }}</strong></a>.
                 </div><!--//bio-->
                 <div class="mb-4">
-                    <a class="btn btn-primary mr-2 mb-3" href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}"><i class="fas fa-arrow-alt-circle-right mr-2"></i><span class="d-none d-md-inline">Ver</span> proyectos</a>
-                    <a class="btn btn-secondary mb-3" href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><i class="fas fa-file-alt mr-2"></i><span class="d-none d-md-inline">Ver</span> CV</a>
+                    <a class="btn btn-primary mr-2 mb-3" href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}"><i class="fas fa-arrow-alt-circle-right mr-2"></i>{{ __('View projects') }}</a>
+                    <a class="btn btn-secondary mb-3" href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><i class="fas fa-file-alt mr-2"></i>{{ __('View resume') }}</a>
                 </div>
             </div><!--//media-body-->
             <img class="profile-image mb-3 mb-lg-0 ml-lg-5 mr-md-0" src="{{ asset('images/web-development.png') }}" width="400" height="300" alt="Web Development">
@@ -26,36 +26,36 @@
 
 <section class="overview-section p-3 p-lg-5">
     <div class="container">
-        <h2 class="section-title font-weight-bold mb-3">&#129300;¿Qué hago?</h2>
-        <div class="section-intro mb-5">Cuento con {{ date('Y') - 2015 }} años de experiencia desarrollando y analizando software.
-            <br>Aquí hay un breve resumen del stack tecnológico que utilizo. Puedes consultar más información visitando mi <a href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><strong>CV</strong></a>.</div>
+        <h2 class="section-title font-weight-bold mb-3">&#129300;{{ __('What I do?') }}</h2>
+        <div class="section-intro mb-5">{{ __('I have :yearsExperience years of experience developing and analyzing software.', ['yearsExperience' =>  date('Y') - 2015 ]) }}
+            <br>{{ __('Here\'s a summary about the technologies that I use. You can discover more checking my ') }} <a href="{{ LaravelLocalization::localizeUrl(route('cv.index')) }}"><strong>{{ __('resume') }}</strong></a>.</div>
         <div class="row">
             <div class="item col-6 col-lg-3">
                 <div class="item-inner">
                     <div class="item-icon"><i class="fab fa-html5 mr-2"></i><i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i></div>
                     <h3 class="item-title">HTML5, CSS3 &amp; Javascript</h3>
-                    <div class="item-desc">Utilizados para el desarrollo de sitios web responsivos.</div>
+                    <div class="item-desc">{{ __('Used for the development of responsive websites.') }}</div>
                 </div><!--//item-inner-->
             </div><!--//item-->
             <div class="item col-6 col-lg-3">
                 <div class="item-inner">
                     <div class="item-icon"><i class="fab fa-php"></i> <i class="fab fa-laravel" style="color: tomato;"></i> <i class="fas fa-database" style="color: cornflowerblue"></i></div>
                     <h3 class="item-title">PHP, Laravel &amp; MySQL</h3>
-                    <div class="item-desc">Desarrollo de aplicaciones web administrativas y APIs REST con Laravel 7.x y MySQL. </div>
+                    <div class="item-desc">{{ __('Development of administrative web applications and REST APIs with Laravel 7.x and MySQL.') }}</div>
                 </div><!--//item-inner-->
             </div><!--//item-->
             <div class="item col-6 col-lg-3">
                 <div class="item-inner">
                     <div class="item-icon"><i class="fab fa-python"></i> <i class="fas fa-bug" style="color: tomato"></i> <i class="fab fa-android" style="color: green;"></i></div>
                     <h3 class="item-title">Python, Burp &amp; Android</h3>
-                    <div class="item-desc">Uso de scripts para realizar ingeniería inversa a aplicaciones móviles y hacer análisis estático y dinámico con Burp. </div>
+                    <div class="item-desc">{{ __('Using scripts to do reverse engineering in mobile applications and do SAST and DAST with BurpSuite.')}}</div>
                 </div><!--//item-inner-->
             </div><!--//item-->
             <div class="item col-6 col-lg-3">
                 <div class="item-inner">
                     <div class="item-icon"><i class="fab fa-node-js" style="color:darkgreen"></i> <i class="fab fa-npm mr-2"></i></div>
                     <h3 class="item-title">Node.js &amp; npm</h3>
-                    <div class="item-desc">Diseño, aseguramiento y construcción de APIs REST con JWT en NodeJS.</div>
+                    <div class="item-desc">{{ __('Design, securement and development of REST APIs with NodeJS and JWT.') }}</div>
                 </div><!--//item-inner-->
             </div><!--//item-->
         </div><!--//row-->
@@ -66,7 +66,7 @@
 
 <section class="featured-section p-3 p-lg-5">
     <div class="container">
-        <h2 class="section-title font-weight-bold mb-5">&#128187;Proyectos destacados</h2>
+        <h2 class="section-title font-weight-bold mb-5">&#128187;{{ __('Principal projects') }}</h2>
         <div class="row">
             <div class="col-md-6 col-sm-12 mb-5">
                 <div class="card project-card">
@@ -77,8 +77,8 @@
                         <div class="col-lg-8">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#" class="theme-link">Gestión Total de Avalúos</a></h5>
-                                <p class="card-text">Plataforma para control, administración de información y documentos de avalúos.</p>
-                                <p class="card-text"><small class="text-muted">Cliente: Valor Total</small></p>
+                                <p class="card-text">{{ __('Platform for control, information management and appraisal request documents.') }}</p>
+                                <p class="card-text"><small class="text-muted">{{ __("Customer") }}: Valor Total</small></p>
                             </div>
                         </div>
                     </div>
@@ -93,15 +93,15 @@
                         <div class="col-lg-8">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#" class="theme-link">SCASTI</a></h5>
-                                <p class="card-text">Desarrollo de página web para consultoría de seguridad de la información.</p>
-                                <p class="card-text"><small class="text-muted">Cliente: SCASTI</small></p>
+                                <p class="card-text">{{ __('Web page development for a company about information security.') }}</p>
+                                <p class="card-text"><small class="text-muted">{{ __('Customer') }}: SCASTI</small></p>
                             </div>
                         </div>
                     </div>
                 </div><!--//card-->
             </div><!--//col-->
         </div><!--//row-->
-        <div class="text-center py-3"><a href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Ver todos los proyectos</a></div>
+        <div class="text-center py-3"><a href="{{ LaravelLocalization::localizeUrl(route('project.index')) }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>{{ __('View all projects') }}</a></div>
     </div><!--//container-->
 </section><!--//featured-section-->
 
@@ -109,7 +109,7 @@
 
 <section class="latest-blog-section p-3 p-lg-5">
     <div class="container">
-        <h2 class="section-title font-weight-bold mb-5">&#128221;Últimas publicaciones</h2>
+        <h2 class="section-title font-weight-bold mb-5">&#128221;{{ __('Latest blog posts') }}</h2>
         <div class="row">
             @foreach ($recentPosts as $post)
                 <div class="col-md-4 mb-3">
@@ -144,7 +144,7 @@
                 </div><!--//col-->
             @endforeach
         </div><!--//row-->
-        <div class="text-center py-3"><a href="{{ LaravelLocalization::localizeUrl(route('blog.index')) }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>Ver blog completo</a></div>
+        <div class="text-center py-3"><a href="{{ LaravelLocalization::localizeUrl(route('blog.index')) }}" class="btn btn-primary"><i class="fas fa-arrow-alt-circle-right mr-2"></i>{{ __('View blog') }}</a></div>
     </div><!--//container-->
 
 </section><!--//latest-blog-section-->

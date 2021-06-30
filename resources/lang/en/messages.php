@@ -1,12 +1,6 @@
 <?php
 
 return [
-
-    'home.position' => 'Application Security Engineer',
-    'home.bio' => 'Developer and software security analyst, interested in 
-        programming and knowing how the applications works. I write about 
-        application security in my',
-
     'cv.button' => 'Download PDF',
     'cv.bio1' => 'I\'m a proactive and responsible person, focused on proposing 
         solutions and making things happen.',
