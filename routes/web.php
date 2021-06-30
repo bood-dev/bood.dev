@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home.index');
+$localization = new LaravelLocalization();
 
-Route::get('/projects', 'ProjectController@index')->name('project.index');
-Route::get('/projects/{slug}', 'ProjectController@show')->name('project.show');
+Route::group(
+    [
+        'prefix' => $localization->setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    ], function() {
+    
+    Route::get('/', 'HomeController@index')->name('home.index');
 
-Route::get('/cv', 'CVController@index')->name('cv.index');
+    Route::get('/projects', 'ProjectController@index')->name('project.index');
+    Route::get('/projects/{slug}', 'ProjectController@show')->name('project.show');
+    
+    Route::get('/cv', 'CVController@index')->name('cv.index');
+    
+    Route::get('/blog', 'BlogController@index')->name('blog.index');
+    Route::get('/blog/{slug}', 'BlogController@show')->name('blog.show');
 
-Route::get('/blog', 'BlogController@index')->name('blog.index');
-Route::get('/blog/{slug}', 'BlogController@show')->name('blog.show');
+});

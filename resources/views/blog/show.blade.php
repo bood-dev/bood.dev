@@ -3,6 +3,12 @@
 @section('description', $post->meta['description'])
 @section('title', 'bood | ' . $post->title)
 
+@section('twitter')
+<!--
+<meta name="twitter:image" content="{{ config('app.url') . $post->featured_image }}"> -->
+<meta name="twitter:image" content="https://images-na.ssl-images-amazon.com/images/I/71ckmeGmAhL._AC_SL1500_.jpg">
+@endsection
+
 @section('stylesheets')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
@@ -36,6 +42,10 @@
                     <span>{{ readingTime($post->body)}}</span>
                     <i class="far fa-user"></i>
                     <span>{{ $post->user['name'] }}</span>
+                    <i class="fab fa-facebook-f"></i>
+                    <span><a href="https://www.facebook.com/sharer/sharer.php?u={{ LaravelLocalization::localizeUrl(route('blog.show', $post->slug)) }}" target="_blank">Compartir en Facebook</a></span>
+                    <i class="fab fa-twitter"></i>
+                    <span><a href="https://twitter.com/intent/tweet?url={{ LaravelLocalization::localizeUrl(route('blog.show', $post->slug)) }}&text={{ $post->summary }}" target="_blank">Compartir en Twitter</a></span>
                 </div>
             </header>
 
