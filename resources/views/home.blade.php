@@ -148,4 +148,16 @@
     </div><!--//container-->
 
 </section><!--//latest-blog-section-->
+
+<section class="latest-blog-section p-3 p-lg-5">
+    <div class="container">
+        <h2 class="section-title font-weight-bold mb-5">&#128216;{{ __('Products') }}</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <script src="https://gumroad.com/js/gumroad-embed.js"></script>
+                <div class="gumroad-product-embed"><a href="https://gumroad.com/l/zufWh">Loading...</a></div>    
+            </div>
+        </div><!--//row-->
+    </div><!--//container-->
+</section><!--//latest-blog-section-->
 @endsection

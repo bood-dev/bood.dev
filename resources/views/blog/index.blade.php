@@ -6,14 +6,15 @@
 @section('content')
     <section class="cta-section theme-bg-light py-5">
         <div class="container text-center">
-            <h2 class="heading">Un blog acerca de desarrollo de software seguro</h2>
-            <div class="intro">Bienvenido a mi blog. Suscribete y obten mis las últimas publicaciones.</div>
-            <form class="signup-form form-inline justify-content-center pt-3">
+            <h2 class="heading">{{ __('A blog about secure software development') }}</h2>
+            <div class="intro">{{ __('Welcome to my blog. You can follow me on Gumroad.') }}</div>
+            <form class="signup-form form-inline justify-content-center pt-3" action="https://gumroad.com/follow_from_embed_form" method="POST">
                 <div class="form-group">
-                    <label class="sr-only" for="semail">Correo electrónico</label>
-                    <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Correo electrónico" autocomplete="off" autofocus>
+                    <label class="sr-only" for="semail">{{ __('Your email address') }}</label>
+                    <input name="seller_id" type="hidden" value="9058440344743"> 
+                    <input name="email" placeholder="{{ __('Your email address') }}" class="form-control mr-md-1 semail" type="email" autocomplete="off" autofocus>
                 </div>
-                <button type="submit" class="btn btn-default" disabled>Suscribirse</button>
+                <button type="submit" class="btn btn-primary">{{ __('Follow') }}</button>
             </form>
         </div><!--//container-->
     </section>
