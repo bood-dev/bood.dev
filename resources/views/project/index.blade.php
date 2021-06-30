@@ -6,18 +6,18 @@
 @section('content')
     <section class="cta-section theme-bg-light py-5">
         <div class="container text-center single-col-max-width">
-            <h2 class="heading">Proyectos</h2>
+            <h2 class="heading">{{ __('Projects') }}</h2>
             <div class="intro">
-                <p>Bienvenido a la galería de mis proyectos independientes. ¿Ocupas ayuda para desarrollar una idea?</p>
+                <p>{{ __('Welcome to my projects gallery. Do you need help to develop an idea?') }}</p>
             </div>
-            <a class="btn btn-primary" href="mailto:bood.dev@gmail.com"><i class="fas fa-paper-plane mr-2"></i>Contacto</a>
+            <a class="btn btn-primary" href="mailto:bood.dev@gmail.com"><i class="fas fa-paper-plane mr-2"></i>{{ __('Contact') }}</a>
         </div><!--//container-->
     </section>
     <section class="projects-list px-3 py-5 p-md-5">
         <div class="container">
             <div class="text-center">
                 <ul id="filters" class="filters mb-5 mx-auto pl-0">
-                    <li class="type active mb-3 mb-lg-0" data-filter="*">Todos</li>
+                    <li class="type active mb-3 mb-lg-0" data-filter="*">{{ __('All') }}</li>
                     <li class="type  mb-3 mb-lg-0" data-filter=".frontend">Frontend</li>
                     <li class="type  mb-3 mb-lg-0" data-filter=".backend">Backend</li>
                 </ul><!--//filters-->
@@ -33,8 +33,8 @@
                             <div class="col-lg-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#" class="theme-link">Gestión Total de Avalúos</a></h5>
-                                    <p class="card-text">Plataforma para control, administración de información y documentos de avalúos.</p>
-                                    <p class="card-text"><small class="text-muted">Cliente: Valor Total</small></p>
+                                    <p class="card-text">{{ __('Platform for control, information management and appraisal request documents.') }}</p>
+                                    <p class="card-text"><small class="text-muted">{{ __('Customer') }}: Valor Total</small></p>
                                 </div>
                             </div>
                         </div>
@@ -49,8 +49,8 @@
                             <div class="col-lg-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#" class="theme-link">SCASTI</a></h5>
-                                    <p class="card-text">Desarrollo de página web para consultoría de seguridad de la información.</p>
-                                    <p class="card-text"><small class="text-muted">Cliente: SCASTI</small></p>
+                                    <p class="card-text">{{ __('Web page development for a company about information security.') }}</p>
+                                    <p class="card-text"><small class="text-muted">{{ __('Customer') }}: SCASTI</small></p>
                                 </div>
                             </div>
                         </div>
@@ -64,9 +64,9 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="#" class="theme-link">SGSI</a></h5>
-                                    <p class="card-text">Sistema para seguimiento y revisión de controles del departamento de seguridad de la información.</p>
-                                    <p class="card-text"><small class="text-muted">Cliente: Dimex</small></p>
+                                    <h5 class="card-title"><a href="#" class="theme-link">{{ __('ISMS') }}</a></h5>
+                                    <p class="card-text">{{ __('Automated the Information Security Management System.') }}</p>
+                                    <p class="card-text"><small class="text-muted">{{ __('Customer') }}: Dimex</small></p>
                                 </div>
                             </div>
                         </div>
@@ -81,8 +81,8 @@
                             <div class="col-lg-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#" class="theme-link">Asproem</a></h5>
-                                    <p class="card-text">Página web informativa para empresa de asesoría contable y fiscal.</p>
-                                    <p class="card-text"><small class="text-muted">Cliente: Asproem</small></p>
+                                    <p class="card-text">{{ __('Web page development for a company about accounting and tax advice.') }}</p>
+                                    <p class="card-text"><small class="text-muted">{{ __('Customer') }}: Asproem</small></p>
                                 </div>
                             </div>
                         </div>
@@ -97,8 +97,8 @@
                             <div class="col-lg-8">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#" class="theme-link">Vivero San Miguel</a></h5>
-                                    <p class="card-text">Página web para mostrar el catálogo de productos.</p>
-                                    <p class="card-text"><small class="text-muted">Cliente: Vivero San Miguel</small></p>
+                                    <p class="card-text">{{ __('E-Commerce developed with WooCommerce.') }}</p>
+                                    <p class="card-text"><small class="text-muted">{{ __('Customer') }}: Vivero San Miguel</small></p>
                                 </div>
                             </div>
                         </div>

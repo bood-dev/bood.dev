@@ -27,5 +27,12 @@
     "Customer": "Cliente",
     "View all projects": "Ver todos los proyectos",
     "Latest blog posts": "Últimas publicaciones",
-    "View blog": "Ver blog completo"
+    "View blog": "Ver blog completo",
+
+    "Welcome to my projects gallery. Do you need help to develop an idea?": "Bienvenido a la galería de proyectos independientes. ¿Ocupas ayuda para desarrollar una idea?",
+    "All": "Todos",
+    "ISMS": "SGSI",
+    "Automated the Information Security Management System.": "Automatización del Sistema de Gestión de Seguridad de la Información.",
+    "Web page development for a company about accounting and tax advice.": "Desarrollo de página web informativa para empresa de asesoría contable y fiscal.",
+    "E-Commerce developed with WooCommerce.": "Tienda electrónica desarrollada con WooCommerce."
 }
