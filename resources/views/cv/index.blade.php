@@ -7,7 +7,7 @@
     <section class="cta-section theme-bg-light py-5">
         <div class="container text-center single-col-max-width">
             <h2 class="heading mb-3">CV</h2>
-            <a class="btn btn-primary" href="{{ asset('CV - Brandon Ortiz.pdf') }}" target="_blank"><i class="fas fa-file-pdf mr-2"></i>{{ __('messages.cv.button') }}</a>
+            <a class="btn btn-primary" href="{{ asset('CV - Brandon Ortiz.pdf') }}" target="_blank"><i class="fas fa-file-pdf mr-2"></i>{{ __('Download resume') }}</a>
         </div><!--//container-->
     </section>
     
