@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 @foreach ($posts as $post)
-                    <div class="col-md-4 mb-3">
+                    <div class="col-xl-4 offset-xl-0 col-lg-10 offset-lg-1 col-md-8 offset-md-2 col-sm-12 mb-3">
                         <div class="card blog-post-card">
                             <img class="card-img-top" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}" width="350" height="220">
                             <div class="card-body">

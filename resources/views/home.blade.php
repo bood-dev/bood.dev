@@ -68,13 +68,13 @@
     <div class="container">
         <h2 class="section-title font-weight-bold mb-5">&#128187;{{ __('Principal projects') }}</h2>
         <div class="row">
-            <div class="col-md-6 col-sm-12 mb-5">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
                 <div class="card project-card">
                     <div class="row no-gutters">
-                        <div class="col-lg-4 card-img-holder">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
                             <img src="{{ asset('images/proyectos/GTA/home.PNG') }}" width="180" height="240" class="card-img" alt="image">
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#" class="theme-link">Gestión Total de Avalúos</a></h5>
                                 <p class="card-text">{{ __('Platform for control, information management and appraisal request documents.') }}</p>
@@ -84,13 +84,13 @@
                     </div>
                 </div><!--//card-->
             </div><!--//col-->
-            <div class="col-sm-12 col-md-6 mb-5">
+            <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
                 <div class="card project-card">
                     <div class="row no-gutters">
-                        <div class="col-lg-4 card-img-holder">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
                             <img src="{{ asset('images/proyectos/SCASTI/home.PNG') }}" width="180" height="240" class="card-img" alt="Página SCASTI">
                         </div>
-                        <div class="col-lg-8">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#" class="theme-link">SCASTI</a></h5>
                                 <p class="card-text">{{ __('Web page development for a company about information security.') }}</p>
@@ -112,7 +112,7 @@
         <h2 class="section-title font-weight-bold mb-5">&#128221;{{ __('Latest blog posts') }}</h2>
         <div class="row">
             @foreach ($recentPosts as $post)
-                <div class="col-md-4 mb-3">
+                <div class="col-xl-4 offset-xl-0 col-lg-10 offset-lg-1 col-md-8 offset-md-2 col-sm-12 mb-3">
                     <div class="card blog-post-card">
                         <img class="card-img-top" src="{{ $post->featured_image }}" alt="{{ $post->featured_image_caption }}" width="350" height="220">
                         <div class="card-body">
@@ -153,7 +153,7 @@
     <div class="container">
         <h2 class="section-title font-weight-bold mb-5">&#128216;{{ __('Products') }}</h2>
         <div class="row">
-            <div class="col-md-6 mb-3">
+            <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1 col-md-8 offset-md-2 col-sm-12 mb-3">
                 <script src="https://gumroad.com/js/gumroad-embed.js"></script>
                 <div class="gumroad-product-embed"><a href="https://gumroad.com/l/zufWh">Loading...</a></div>    
             </div>
