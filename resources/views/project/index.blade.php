@@ -24,13 +24,13 @@
             </div>
 
             <div class="project-cards row isotope">
-                <div class="isotope-item col-md-6 mb-5 backend frontend">
+                <div class="isotope-item col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5 backend frontend">
                     <div class="card project-card">
                         <div class="row no-gutters">
-                            <div class="col-lg-4 card-img-holder">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
                                 <img src="{{ asset('/images/proyectos/GTA/home.PNG')}}" width="180" height="240" class="card-img" alt="Gestión Total de Avalúos">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#" class="theme-link">Gestión Total de Avalúos</a></h5>
                                     <p class="card-text">{{ __('Platform for control, information management and appraisal request documents.') }}</p>
@@ -40,13 +40,13 @@
                         </div>
                     </div><!--//card-->
                 </div><!--//col-->
-                <div class="isotope-item col-md-6 mb-5 backend frontend">
+                <div class="isotope-item col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5 backend frontend">
                     <div class="card project-card">
                         <div class="row no-gutters">
-                            <div class="col-lg-4 card-img-holder">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
                                 <img src="{{ asset('/images/proyectos/SCASTI/home.PNG') }}" width="180" height="240" class="card-img" alt="Página SCASTI">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#" class="theme-link">SCASTI</a></h5>
                                     <p class="card-text">{{ __('Web page development for a company about information security.') }}</p>
@@ -56,13 +56,13 @@
                         </div>
                     </div><!--//card-->
                 </div><!--//col-->
-                <div class="isotope-item col-md-6 mb-5 backend frontend">
+                <div class="isotope-item col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5 backend frontend">
                     <div class="card project-card">
                         <div class="row no-gutters">
-                            <div class="col-lg-4 card-img-holder">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
                                 <img src="{{ asset('/images/proyectos/SGSI/home.jpg') }}" width="180" height="240" class="card-img" alt="Sistema de Gestión de Seguridad de la Información">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#" class="theme-link">{{ __('ISMS') }}</a></h5>
                                     <p class="card-text">{{ __('Automated the Information Security Management System.') }}</p>
@@ -72,13 +72,13 @@
                         </div>
                     </div><!--//card-->
                 </div><!--//col-->
-                <div class="isotope-item col-md-6 mb-5 frontend">
+                <div class="isotope-item col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5 frontend">
                     <div class="card project-card">
                         <div class="row no-gutters">
-                            <div class="col-lg-4 card-img-holder">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
                                 <img src="{{ asset('/images/proyectos/Asproem/home.png') }}" width="180" height="240" class="card-img" alt="Asproem">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#" class="theme-link">Asproem</a></h5>
                                     <p class="card-text">{{ __('Web page development for a company about accounting and tax advice.') }}</p>
@@ -88,13 +88,13 @@
                         </div>
                     </div><!--//card-->
                 </div><!--//col-->
-                <div class="isotope-item col-md-6 mb-5 frontend">
+                <div class="isotope-item col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5 frontend">
                     <div class="card project-card">
                         <div class="row no-gutters">
-                            <div class="col-lg-4 card-img-holder">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
                                 <img src="{{ asset('/images/proyectos/ViveroSanMiguel/home.png') }}" width="180" height="240" class="card-img" alt="Vivero San Miguel">
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#" class="theme-link">Vivero San Miguel</a></h5>
                                     <p class="card-text">{{ __('E-Commerce developed with WooCommerce.') }}</p>

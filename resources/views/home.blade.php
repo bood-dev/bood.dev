@@ -71,10 +71,10 @@
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
                 <div class="card project-card">
                     <div class="row no-gutters">
-                        <div class="col-xl-5 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
                             <img src="{{ asset('images/proyectos/GTA/home.PNG') }}" width="180" height="240" class="card-img" alt="image">
                         </div>
-                        <div class="col-xl-7 col-lg-8 col-md-8 col-sm-7 col-12">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#" class="theme-link">Gestión Total de Avalúos</a></h5>
                                 <p class="card-text">{{ __('Platform for control, information management and appraisal request documents.') }}</p>
@@ -87,10 +87,10 @@
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">
                 <div class="card project-card">
                     <div class="row no-gutters">
-                        <div class="col-xl-5 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-12 card-img-holder">
                             <img src="{{ asset('images/proyectos/SCASTI/home.PNG') }}" width="180" height="240" class="card-img" alt="Página SCASTI">
                         </div>
-                        <div class="col-xl-7 col-lg-8 col-md-8 col-sm-7 col-12">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7 col-12">
                             <div class="card-body">
                                 <h5 class="card-title"><a href="#" class="theme-link">SCASTI</a></h5>
                                 <p class="card-text">{{ __('Web page development for a company about information security.') }}</p>
